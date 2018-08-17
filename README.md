@@ -1,1 +1,2 @@
-# romaklik.github.io
+Сильное желание чему-то научится - это уже 50% успеха
+romaklik.github.io
