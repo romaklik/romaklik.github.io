@@ -264,7 +264,7 @@
 
         //     return s;
 
-        //},
+        // },
         fadeSpeed: 300,
         onPopupClose: function() { $body.removeClass('modal-active'); },
         onPopupOpen: function() { $body.addClass('modal-active'); },
@@ -275,7 +275,7 @@
         popupSpeed: 300,
         popupWidth: 150,
         selector: '.thumb > a.image',
-        usePopupCaption: false,
+        usePopupCaption: true,
         usePopupCloser: true,
         usePopupDefaultStyling: false,
         usePopupForceClose: true,
@@ -291,8 +291,5 @@
 
     breakpoints.on('>xsmall', function() {
         $main[0]._poptrox.windowMargin = 50;
-    });
-
-// attr(data-title)
-  //$img20.title="Клыков роман. 'Первобытное семя'. Тушь. 2000 г.";
+    })
 })(jQuery);
