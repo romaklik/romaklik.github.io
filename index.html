@@ -34,21 +34,6 @@
         fimg[j].oncontextmenu = function(){return false;}
         fimg[j].ondragstart = function(){return false;}
         }
-        $(function ($) {
-        $.getScript('./assets/smartlid/smartlid.js', function () {
-            $('body').smartLid({
-
-            });
-        });
-
-        function addStyle(href) {
-            elem = document.createElement("link");
-            elem.href = href;
-            elem.rel = 'stylesheet';
-            document.head.appendChild(elem);
-        }
-        addStyle('./assets/smartlid/css/main.css');
-    }(jQuery));
 </script>
 </body>
 
