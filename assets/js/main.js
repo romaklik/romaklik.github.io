@@ -1,295 +1,242 @@
-/*
-	Multiverse by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function($) {
+  "use strict";
 
-    var $window = $(window),
-        $body = $('body'),
-        $wrapper = $('#wrapper');
-
-    // Breakpoints.
-    breakpoints({
-        xlarge: ['1281px', '1680px'],
-        large: ['981px', '1280px'],
-        medium: ['737px', '980px'],
-        small: ['481px', '736px'],
-        xsmall: [null, '480px']
-    });
-
-    // Hack: Enable IE workarounds.
-    if (browser.name == 'ie')
-        $body.addClass('ie');
-
-    // Touch?
-    if (browser.mobile)
-        $body.addClass('touch');
-
-    // Transitions supported?
-    if (browser.canUse('transition')) {
-
-        // Play initial animations on page load.
-        $window.on('load', function() {
-            window.setTimeout(function() {
-                $body.removeClass('is-preload');
-            }, 100);
-        });
-
-        // Prevent transitions/animations on resize.
-        var resizeTimeout;
-
-        $window.on('resize', function() {
-
-            window.clearTimeout(resizeTimeout);
-
-            $body.addClass('is-resizing');
-
-            resizeTimeout = window.setTimeout(function() {
-                $body.removeClass('is-resizing');
-            }, 100);
-
-        });
-
+  // Preloader
+  $(window).on('load', function() {
+    if ($('#preloader').length) {
+      $('#preloader').delay(100).fadeOut('slow', function() {
+        $(this).remove();
+      });
     }
+  });
 
-    // Scroll back to top.
-    $window.scrollTop(0);
+  // Back to top button
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.back-to-top').fadeIn('slow');
+    } else {
+      $('.back-to-top').fadeOut('slow');
+    }
+  });
+  $('.back-to-top').click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1500, 'easeInOutExpo');
+    return false;
+  });
 
-    // Panels.
-    var $panels = $('.panel');
+  // Smooth scroll for the navigation menu and links with .scrollto classes
+  var scrolltoOffset = $('#header').outerHeight() - 17;
+  $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      if (target.length) {
+        e.preventDefault();
 
-    $panels.each(function() {
+        var scrollto = target.offset().top - scrolltoOffset;
 
-        var $this = $(this),
-            $toggles = $('[href="#' + $this.attr('id') + '"]'),
-            $closer = $('<div class="closer" />').appendTo($this);
+        if ($(this).attr("href") == '#header') {
+          scrollto = 0;
+        }
 
-        // Closer.
-        $closer
-            .on('click', function(event) {
-                $this.trigger('---hide');
-            });
+        $('html, body').animate({
+          scrollTop: scrollto
+        }, 1500, 'easeInOutExpo');
 
-        // Events.
-        $this
-            .on('click', function(event) {
-                event.stopPropagation();
-            })
-            .on('---toggle', function() {
+        if ($(this).parents('.nav-menu, .mobile-nav').length) {
+          $('.nav-menu .active, .mobile-nav .active').removeClass('active');
+          $(this).closest('li').addClass('active');
+        }
 
-                if ($this.hasClass('active'))
-                    $this.triggerHandler('---hide');
-                else
-                    $this.triggerHandler('---show');
+        if ($('body').hasClass('mobile-nav-active')) {
+          $('body').removeClass('mobile-nav-active');
+          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+          $('.mobile-nav-overly').fadeOut();
+        }
+        return false;
+      }
+    }
+  });
 
-            })
-            .on('---show', function() {
+  // Activate smooth scroll on page load with hash links in the url
+  $(document).ready(function() {
+    if (window.location.hash) {
+      var initial_nav = window.location.hash;
+      if ($(initial_nav).length) {
+        var scrollto = $(initial_nav).offset().top - scrolltoOffset;
+        $('html, body').animate({
+          scrollTop: scrollto
+        }, 1500, 'easeInOutExpo');
+      }
+    }
+  });
 
-                // Hide other content.
-                if ($body.hasClass('content-active'))
-                    $panels.trigger('---hide');
+  // Mobile Navigation
+  if ($('.nav-menu').length) {
+    var $mobile_nav = $('.nav-menu').clone().prop({
+      class: 'mobile-nav d-lg-none'
+    });
+    $('body').append($mobile_nav);
+    $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
+    $('body').append('<div class="mobile-nav-overly"></div>');
 
-                // Activate content, toggles.
-                $this.addClass('active');
-                $toggles.addClass('active');
-
-                // Activate body.
-                $body.addClass('content-active');
-
-            })
-            .on('---hide', function() {
-
-                // Deactivate content, toggles.
-                $this.removeClass('active');
-                $toggles.removeClass('active');
-
-                // Deactivate body.
-                $body.removeClass('content-active');
-
-            });
-
-        // Toggles.
-        $toggles
-            .removeAttr('href')
-            .css('cursor', 'pointer')
-            .on('click', function(event) {
-
-                event.preventDefault();
-                event.stopPropagation();
-
-                $this.trigger('---toggle');
-
-            });
-
+    $(document).on('click', '.mobile-nav-toggle', function(e) {
+      $('body').toggleClass('mobile-nav-active');
+      $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+      $('.mobile-nav-overly').toggle();
     });
 
-    // Global events.
-    $body
-        .on('click', function(event) {
-
-            if ($body.hasClass('content-active')) {
-
-                event.preventDefault();
-                event.stopPropagation();
-
-                $panels.trigger('---hide');
-
-            }
-
-        });
-
-    $window
-        .on('keyup', function(event) {
-
-            if (event.keyCode == 27 &&
-                $body.hasClass('content-active')) {
-
-                event.preventDefault();
-                event.stopPropagation();
-
-                $panels.trigger('---hide');
-
-            }
-
-        });
-    //images content
-    $("#menu").on("click", "a", function(event) {
-        //отменяем стандартную обработку нажатия по ссылке
-        event.preventDefault();
-
-        //забираем идентификатор бока с атрибута href
-        var id = $(this).attr('href'),
-
-            //узнаем высоту от начала страницы до блока на который ссылается якорь
-            top = $(id).offset().top;
-
-        //анимируем переход на расстояние - top за 1500 мс
-        $('body,html').animate({ scrollTop: top }, 1500);
+    $(document).on('click', '.mobile-nav .drop-down > a', function(e) {
+      e.preventDefault();
+      $(this).next().slideToggle(300);
+      $(this).parent().toggleClass('active');
     });
 
-    // Header.
-    var $header = $('#header');
-
-    // Links.
-    $header.find('a').each(function() {
-
-        var $this = $(this),
-            href = $this.attr('href');
-
-        // Internal link? Skip.
-        if (!href ||
-            href.charAt(0) == '#')
-            return;
-
-        // Redirect on click.
-        $this
-            .removeAttr('href')
-            .css('cursor', 'pointer')
-            .on('click', function(event) {
-
-                event.preventDefault();
-                event.stopPropagation();
-
-                window.location.href = href;
-
-            });
-
+    $(document).click(function(e) {
+      var container = $(".mobile-nav, .mobile-nav-toggle");
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+        if ($('body').hasClass('mobile-nav-active')) {
+          $('body').removeClass('mobile-nav-active');
+          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+          $('.mobile-nav-overly').fadeOut();
+        }
+      }
     });
+  } else if ($(".mobile-nav, .mobile-nav-toggle").length) {
+    $(".mobile-nav, .mobile-nav-toggle").hide();
+  }
 
-    // Footer.
-    var $footer = $('#footer');
+  // Header scroll class
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('#header').addClass('header-scrolled');
+    } else {
+      $('#header').removeClass('header-scrolled');
+    }
+  });
 
-    // Copyright.
-    // This basically just moves the copyright line to the end of the *last* sibling of its current parent
-    // when the "medium" breakpoint activates, and moves it back when it deactivates.
-    $footer.find('.copyright').each(function() {
+  if ($(window).scrollTop() > 100) {
+    $('#header').addClass('header-scrolled');
+  }
 
-        var $this = $(this),
-            $parent = $this.parent(),
-            $lastParent = $parent.parent().children().last();
+  // Navigation active state on scroll
+  var nav_sections = $('section');
+  var main_nav = $('.nav-menu, .mobile-nav');
 
-        breakpoints.on('<=medium', function() {
-            $this.appendTo($lastParent);
-        });
+  $(window).on('scroll', function() {
+    var cur_pos = $(this).scrollTop() + 200;
 
-        breakpoints.on('>medium', function() {
-            $this.appendTo($parent);
-        });
+    nav_sections.each(function() {
+      var top = $(this).offset().top,
+        bottom = top + $(this).outerHeight();
 
+      if (cur_pos >= top && cur_pos <= bottom) {
+        if (cur_pos <= bottom) {
+          main_nav.find('li').removeClass('active');
+        }
+        main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
+      }
+      if (cur_pos < 300) {
+        $(".nav-menu ul:first li:first").addClass('active');
+      }
     });
+  });
 
-    // Main.
-    var $main = $('#main');
+  // Intro carousel
+  var introCarousel = $(".carousel");
+  var introCarouselIndicators = $(".carousel-indicators");
+  introCarousel.find(".carousel-inner").children(".carousel-item").each(function(index) {
+    (index === 0) ?
+    introCarouselIndicators.append("<li data-target='#introCarousel' data-slide-to='" + index + "' class='active'></li>"):
+      introCarouselIndicators.append("<li data-target='#introCarousel' data-slide-to='" + index + "'></li>");
+  });
 
-    // Thumbs.
-    $main.children('.thumb').each(function() {
+  introCarousel.on('slid.bs.carousel', function(e) {
+    $(this).find('h2').addClass('animate__animated animate__fadeInDown');
+    $(this).find('p, .btn-get-started').addClass('animate__animated animate__fadeInUp');
+  });
 
-        var $this = $(this),
-            $image = $this.find('.image'),
-            $image_img = $image.children('img'),
-            x;
-
-        // No image? Bail.
-        if ($image.length == 0)
-            return;
-
-        // Image.
-        // This sets the background of the "image" <span> to the image pointed to by its child
-        // <img> (which is then hidden). Gives us way more flexibility.
-
-        // Set background.
-        $image.css('background-image', 'url(' + $image_img.attr('src') + ')');
-
-        // Set background position.
-        if (x = $image_img.data('position'))
-            $image.css('background-position', x);
-
-        // Hide original img.
-        $image_img.hide();
-
+  // Skills section
+  $('#skills').waypoint(function() {
+    $('.progress .progress-bar').each(function() {
+      $(this).css("width", $(this).attr("aria-valuenow") + '%');
     });
+  }, {
+    offset: '80%'
+  });
 
-    // Poptrox.
-    $main.poptrox({
-        baseZIndex: 20000,
-        // caption: function($a) {
+  // jQuery counterUp (used in Facts section)
+  $('[data-toggle="counter-up"]').counterUp({
+    delay: 10,
+    time: 1000
+  });
 
-        //     var s = '';
+  // Porfolio isotope and filter
+  var portfolioIsotope = $('.portfolio-container').isotope({
+    itemSelector: '.portfolio-item',
+    layoutMode: 'fitRows'
+  });
 
-        //     $a.nextAll().each(function() {
-        //         s += this.outerHTML;
-        //     });
+  $('#portfolio-flters li').on('click', function() {
+    $("#portfolio-flters li").removeClass('filter-active');
+    $(this).addClass('filter-active');
 
-        //     return s;
-
-        // },
-        fadeSpeed: 300,
-        onPopupClose: function() { $body.removeClass('modal-active'); },
-        onPopupOpen: function() { $body.addClass('modal-active'); },
-        overlayOpacity: 0,
-        popupCloserText: '',
-        popupHeight: 150,
-        popupLoaderText: '',
-        popupSpeed: 300,
-        popupWidth: 150,
-        selector: '.thumb > a.image',
-        usePopupCaption: true,
-        usePopupCloser: true,
-        usePopupDefaultStyling: false,
-        usePopupForceClose: true,
-        usePopupLoader: true,
-        usePopupNav: true,
-        windowMargin: 50
+    portfolioIsotope.isotope({
+      filter: $(this).data('filter')
     });
+    aos_init();
+  });
 
-    // Hack: Set margins to 0 when 'xsmall' activates.
-    breakpoints.on('<=xsmall', function() {
-        $main[0]._poptrox.windowMargin = 0;
+  // Initiate venobox (lightbox feature used in portofilo)
+  $(document).ready(function() {
+    $('.venobox').venobox();
+  });
+
+  // Clients carousel (uses the Owl Carousel library)
+  $(".clients-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    responsive: {
+      0: {
+        items: 2
+      },
+      768: {
+        items: 4
+      },
+      900: {
+        items: 6
+      }
+    }
+  });
+
+  // Testimonials carousel (uses the Owl Carousel library)
+  $(".testimonials-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    items: 1
+  });
+
+  // Portfolio details carousel
+  $(".portfolio-details-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    items: 1
+  });
+
+  // Init AOS
+  function aos_init() {
+    AOS.init({
+      duration: 1000,
+      once: true
     });
+  }
+  $(window).on('load', function() {
+    aos_init();
+  });
 
-    breakpoints.on('>xsmall', function() {
-        $main[0]._poptrox.windowMargin = 50;
-    })
 })(jQuery);
+
+
