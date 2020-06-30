@@ -432,7 +432,7 @@ new Vue({
         {
             "title": "Роза",
             "image": {
-                large: "/assets/img/cvet/60.jpg"
+                large: "/assets/img/cvet/62.jpg"
             }
         }
         ]
