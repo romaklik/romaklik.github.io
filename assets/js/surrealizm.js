@@ -72,7 +72,7 @@ new Vue({
                 large: "/assets/img/threed/10.jpg"
              }          
              
-        },
+        }
         ]
     }
 });
