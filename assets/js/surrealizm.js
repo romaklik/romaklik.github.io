@@ -1,6 +1,6 @@
 // 
 new Vue({
-    el: '#dimensional',
+    el: '#threed',
     data: {
         dimages: [
         {
