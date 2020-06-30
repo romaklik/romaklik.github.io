@@ -2,7 +2,7 @@
 new Vue({
     el: '#threed',
     data: {
-        threedimages: [
+        th-images: [
         {
             "title": "1",
             "image": {
