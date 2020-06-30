@@ -1,6 +1,10 @@
 (function($) {
   "use strict";
 
+ 
+
+
+
   // Preloader
   $(window).on('load', function() {
     if ($('#preloader').length) {
@@ -9,6 +13,16 @@
       });
     }
   });
+  
+  $(".fancybox").fancybox({
+    beforeShow : function() {
+        var title = this.element.find('img').attr('title');
+        
+        this.inner.find('img').attr('title', title);
+        
+        this.title = title;
+    }
+});
 
   // Back to top button
   $(window).scroll(function() {
