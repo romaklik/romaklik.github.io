@@ -137,6 +137,34 @@
     	</div>
     </section>
     <!-- pictures cherno-belie end -->
+    <!-- pictures cherno-belie -->
+    <section id="threed" class="section-bg">
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+          <h3 class="section-title">Трехмерные</h3>
+        </header>
+      </div>
+      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-4 col-md-6 portfolio-item" v-for="h in threedimages">
+          <div class="portfolio-wrap">
+            <figure>
+              <img v-bind:src="h.image.large" class="img-fluid" v-bind:alt="h.title">
+              <a v-bind:href="h.image.large" data-fancybox="threed" v-bind:data-caption="h.title" v-bind:data-title="h.title" class="link-preview"><i class="ion ion-eye"></i></a>
+            </figure>
+            <div class="portfolio-info">
+              <h4 v-bind:title="h.title">{{h.title}}</h4>
+              <!-- <h4><a href="portfolio-details.html">App 1</a></h4>
+              <p>App</p> -->
+            </div>
+            <!-- <div class="portfolio-info">
+              <h4><a href="portfolio-details.html">App 1</a></h4>
+              <p>App</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- pictures cherno-belie end -->
     <!-- ======= Video Section ======= -->
     <section id="video">
       <div class="container" data-aos="fade-up">

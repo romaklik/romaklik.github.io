@@ -1,5 +1,81 @@
 // 
-
+new Vue({
+    el: '#threed',
+    data: {
+        threedimages: [
+        {
+            "title": "1",
+            "image": {
+                large: "/assets/img/threed/1.jpg"
+             }          
+             
+        },
+        {
+            "title": "2",
+            "image": {
+                large: "/assets/img/threed/2.jpg"
+             }          
+             
+        },
+        {
+            "title": "3",
+            "image": {
+                large: "/assets/img/threed/3.jpg"
+             }          
+             
+        },
+        {
+            "title": "4",
+            "image": {
+                large: "/assets/img/threed/4.jpg"
+             }          
+             
+        },
+        {
+            "title": "5",
+            "image": {
+                large: "/assets/img/threed/5.jpg"
+             }          
+             
+        },
+        {
+            "title": "6",
+            "image": {
+                large: "/assets/img/threed/6.jpg"
+             }          
+             
+        },
+        {
+            "title": "7",
+            "image": {
+                large: "/assets/img/threed/7.jpg"
+             }          
+             
+        },
+        {
+            "title": "8",
+            "image": {
+                large: "/assets/img/threed/8.jpg"
+             }          
+             
+        },
+        {
+            "title": "9",
+            "image": {
+                large: "/assets/img/threed/9.jpg"
+             }          
+             
+        },
+        {
+            "title": "10",
+            "image": {
+                large: "/assets/img/threed/10.jpg"
+             }          
+             
+        },
+        ]
+    }
+});
 new Vue({
   el: '#cvet',
   data: {
