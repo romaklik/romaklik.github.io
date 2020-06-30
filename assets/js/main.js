@@ -14,7 +14,9 @@
     }
   });
 
-  
+  $('.img-fluid').fancybox({
+            title: true
+        });
 
   // Back to top button
   $(window).scroll(function() {
