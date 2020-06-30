@@ -1,8 +1,8 @@
 // 
 new Vue({
-    el: '#threed',
+    el: '#dimensional',
     data: {
-        thimages: [
+        dimensionalimages: [
         {
             "title": "1",
             "image": {
