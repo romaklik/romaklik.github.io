@@ -416,6 +416,24 @@ new Vue({
                 large: "/assets/img/cvet/59.jpg"
              }          
              
+        },
+        {
+            "title": "Черный кот",
+            "image": {
+                large: "/assets/img/cvet/60.jpg"
+            }
+        },
+        {
+            "title": "Букет",
+            "image": {
+                large: "/assets/img/cvet/61.jpg"
+            }
+        },
+        {
+            "title": "Роза",
+            "image": {
+                large: "/assets/img/cvet/60.jpg"
+            }
         }
         ]
 
