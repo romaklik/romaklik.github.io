@@ -4,70 +4,70 @@ new Vue({
     data: {
         threedimages: [
         {
-            "title": "1",
+            "title": "Шар",
             "image": {
                 large: "/assets/img/threed/1.jpg"
              }          
              
         },
         {
-            "title": "2",
+            "title": "Шар и ножницы",
             "image": {
                 large: "/assets/img/threed/2.jpg"
              }          
              
         },
         {
-            "title": "3",
+            "title": "Пасажирский самолет летящий",
             "image": {
                 large: "/assets/img/threed/3.jpg"
              }          
              
         },
         {
-            "title": "4",
+            "title": "Карандаш",
             "image": {
                 large: "/assets/img/threed/4.jpg"
              }          
              
         },
         {
-            "title": "5",
+            "title": "Бабочка",
             "image": {
                 large: "/assets/img/threed/5.jpg"
              }          
              
         },
         {
-            "title": "6",
+            "title": "Дырка в ладоне",
             "image": {
                 large: "/assets/img/threed/6.jpg"
              }          
              
         },
         {
-            "title": "7",
+            "title": "Порхающая бабочка",
             "image": {
                 large: "/assets/img/threed/7.jpg"
              }          
              
         },
         {
-            "title": "8",
+            "title": "Луна",
             "image": {
                 large: "/assets/img/threed/8.jpg"
              }          
              
         },
         {
-            "title": "9",
+            "title": "В столе трещина",
             "image": {
                 large: "/assets/img/threed/9.jpg"
              }          
              
         },
         {
-            "title": "10",
+            "title": "Шар",
             "image": {
                 large: "/assets/img/threed/10.jpg"
              }          
