@@ -121,9 +121,13 @@
           <div class="portfolio-wrap">
             <figure>
               <img v-bind:src="a.image.large" class="img-fluid" alt="">
-              <a v-bind:href="a.image.large" data-fancybox="cb" data-title="App 1" class="link-preview"><i class="ion ion-eye"></i></a>
+              <a v-bind:href="a.image.large" data-fancybox="cb" v-bind:data-title="a.title" class="link-preview"><i class="ion ion-eye"></i></a>
             </figure>
-
+            <div class="portfolio-info">
+              <h4 v-bind:title="a.title">{{a.title}}</h4>
+              <!-- <h4><a href="portfolio-details.html">App 1</a></h4>
+              <p>App</p> -->
+            </div>
             <!-- <div class="portfolio-info">
               <h4><a href="portfolio-details.html">App 1</a></h4>
               <p>App</p>
