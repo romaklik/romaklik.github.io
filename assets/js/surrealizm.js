@@ -2,7 +2,7 @@
 new Vue({
     el: '#threed',
     data: {
-        th-images: [
+        thimages: [
         {
             "title": "1",
             "image": {

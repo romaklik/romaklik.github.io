@@ -145,22 +145,16 @@
           <h3 class="section-title">Трехмерные</h3>
         </header>
       </div>
-      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-        <div class="col-lg-4 col-md-6 portfolio-item" v-for="с in th-images">
+      <div class="row portfolio-container"  data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-4 col-md-6 portfolio-item" v-for="c in thimages">
           <div class="portfolio-wrap">
             <figure>
-              <img v-bind:src="с.image.large" class="img-fluid" v-bind:alt="с.title">
-              <a v-bind:href="с.image.large" data-fancybox="threed" v-bind:data-caption="с.title" v-bind:data-title="с.title" class="link-preview"><i class="ion ion-eye"></i></a>
+              <img v-bind:src="c.image.large" class="img-fluid" v-bind:alt="c.title">
+              <a v-bind:href="c.image.large" data-fancybox="th" v-bind:data-caption="c.title" v-bind:data-title="c.title" class="link-preview"><i class="ion ion-eye"></i></a>
             </figure>
             <div class="portfolio-info">
-              <h4 v-bind:title="с.title">{{с.title}}</h4>
-              <!-- <h4><a href="portfolio-details.html">App 1</a></h4>
-              <p>App</p> -->
+              <h4 v-bind:title="c.title">{{c.title}}</h4>
             </div>
-            <!-- <div class="portfolio-info">
-              <h4><a href="portfolio-details.html">App 1</a></h4>
-              <p>App</p>
-            </div> -->
           </div>
         </div>
       </div>
