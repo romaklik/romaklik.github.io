@@ -14,9 +14,20 @@
     }
   });
 
-  $('.img-fluid').fancybox({
-            title: true
-        });
+  $('[data-fancybox]').fancybox({
+  // Options will go here
+  caption : function( instance, item ) {
+        var caption = $(this).data('caption') || '';
+
+        if ( item.type === 'image' ) {
+            caption = (caption.length ? caption + '<br />' : '') + '<a href="' + item.src + '">Download image</a>' ;
+        }
+
+        return caption;
+    }
+
+  
+});
 
   // Back to top button
   $(window).scroll(function() {
