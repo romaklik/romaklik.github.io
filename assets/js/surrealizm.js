@@ -2,7 +2,7 @@
 new Vue({
     el: '#dimensional',
     data: {
-        dimensionalimages: [
+        dimages: [
         {
             "title": "1",
             "image": {
