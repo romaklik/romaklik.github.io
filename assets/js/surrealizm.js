@@ -46,357 +46,217 @@ new Vue({
     		 
         },
         {
-    		"title": "7",
+    		"title": "Березовая роща",
     		"image": {
     			large: "/assets/img/cvet/7.jpg"
     		 }   		
     		 
         },
         {
-    		"title": "8",
+    		"title": "Извержение",
     		"image": {
     			large: "/assets/img/cvet/8.jpg"
     		 }   		
     		 
         },
         {
-    		"title": "9",
+    		"title": "Снежинки и роза",
     		"image": {
     			large: "/assets/img/cvet/9.jpg"
     		 }   		
     		 
         },
         {
-    		"title": "10",
+    		"title": "Крымский берег. Маки",
     		"image": {
     			large: "/assets/img/cvet/10.jpg"
     		 }   		
     		 
         },
         {
-            "title": "11",
+            "title": "Мой мир",
             "image": {
                 large: "/assets/img/cvet/11.jpg"
              }          
              
         },
         {
-            "title": "12",
+            "title": "Огонь и лед",
             "image": {
                 large: "/assets/img/cvet/12.jpg"
              }          
              
         },
         {
-            "title": "13",
+            "title": "Шторм. Яхта. Дельфины",
             "image": {
                 large: "/assets/img/cvet/13.jpg"
              }          
              
         },
         {
-            "title": "14",
+            "title": "Севастополь. Май 1944 г. I часть",
             "image": {
                 large: "/assets/img/cvet/14.jpg"
              }          
              
         },
         {
-            "title": "15",
+            "title": "Солнечные березы",
             "image": {
                 large: "/assets/img/cvet/15.jpg"
              }          
              
-        },
+        },        
         {
-            "title": "16",
-            "image": {
-                large: "/assets/img/cvet/16.jpg"
-             }          
-             
-        },
-        {
-            "title": "17",
+            "title": "Севастополь. Май 1944 г. II часть",
             "image": {
                 large: "/assets/img/cvet/17.jpg"
              }          
              
         },
         {
-            "title": "18",
+            "title": "Севастополь. Май 1944 г. III часть",
             "image": {
                 large: "/assets/img/cvet/18.jpg"
              }          
              
         },
         {
-            "title": "19",
+            "title": "Богиня леса",
             "image": {
                 large: "/assets/img/cvet/19.jpg"
              }          
              
         },
         {
-            "title": "20",
+            "title": "Котик",
             "image": {
                 large: "/assets/img/cvet/20.jpg"
              }          
              
         },
         {
-            "title": "21",
+            "title": "Первобытное семя",
             "image": {
                 large: "/assets/img/cvet/21.jpg"
              }          
              
         },
         {
-            "title": "22",
+            "title": "Горное озеро",
             "image": {
                 large: "/assets/img/cvet/22.jpg"
              }          
              
-        },
+        },        
         {
-            "title": "23",
-            "image": {
-                large: "/assets/img/cvet/23.jpg"
-             }          
-             
-        },
-        {
-            "title": "24",
-            "image": {
-                large: "/assets/img/cvet/24.jpg"
-             }          
-             
-        },
-        {
-            "title": "25",
+            "title": "Крик сиреневого Солнца",
             "image": {
                 large: "/assets/img/cvet/25.jpg"
              }          
              
-        },
+        },        
         {
-            "title": "26",
-            "image": {
-                large: "/assets/img/cvet/26.jpg"
-             }          
-             
-        },
-        {
-            "title": "27",
+            "title": "Вино. Косатки и Перевал Дятлова",
             "image": {
                 large: "/assets/img/cvet/27.jpg"
              }          
              
         },
         {
-            "title": "28",
-            "image": {
-                large: "/assets/img/cvet/28.jpg"
-             }          
-             
-        },
-        {
-            "title": "29",
-            "image": {
-                large: "/assets/img/cvet/29.jpg"
-             }          
-             
-        },
-        {
-            "title": "30",
-            "image": {
-                large: "/assets/img/cvet/30.jpg"
-             }          
-             
-        },
-        {
-            "title": "31",
+            "title": "Единорог",
             "image": {
                 large: "/assets/img/cvet/31.jpg"
              }          
              
         },
         {
-            "title": "32",
-            "image": {
-                large: "/assets/img/cvet/32.jpg"
-             }          
-             
-        },
-        {
-            "title": "33",
+            "title": "Крымский Пейзаж",
             "image": {
                 large: "/assets/img/cvet/33.jpg"
              }          
              
         },
         {
-            "title": "34",
+            "title": "Весна в Париже",
             "image": {
                 large: "/assets/img/cvet/34.jpg"
              }          
              
         },
         {
-            "title": "35",
-            "image": {
-                large: "/assets/img/cvet/35.jpg"
-             }          
-             
-        },
-        {
-            "title": "36",
-            "image": {
-                large: "/assets/img/cvet/36.jpg"
-             }          
-             
-        },
-        {
-            "title": "37",
-            "image": {
-                large: "/assets/img/cvet/37.jpg"
-             }          
-             
-        },
-        {
-            "title": "38",
-            "image": {
-                large: "/assets/img/cvet/38.jpg"
-             }          
-             
-        },
-        {
-            "title": "39",
-            "image": {
-                large: "/assets/img/cvet/39.jpg"
-             }          
-             
-        },
-        {
-            "title": "40",
-            "image": {
-                large: "/assets/img/cvet/40.jpg"
-             }          
-             
-        },
-        {
-            "title": "41",
+            "title": "Противостояние",
             "image": {
                 large: "/assets/img/cvet/41.jpg"
              }          
              
         },
         {
-            "title": "42",
+            "title": "Театр Луначарского",
             "image": {
                 large: "/assets/img/cvet/42.jpg"
              }          
              
         },
         {
-            "title": "43",
+            "title": "Готика",
             "image": {
                 large: "/assets/img/cvet/43.jpg"
              }          
              
         },
         {
-            "title": "44",
-            "image": {
-                large: "/assets/img/cvet/44.jpg"
-             }          
-             
-        },
-        {
-            "title": "45",
-            "image": {
-                large: "/assets/img/cvet/45.jpg"
-             }          
-             
-        },
-        {
-            "title": "46",
-            "image": {
-                large: "/assets/img/cvet/46.jpg"
-             }          
-             
-        },
-        {
-            "title": "47",
-            "image": {
-                large: "/assets/img/cvet/47.jpg"
-             }          
-             
-        },
-        {
-            "title": "48",
+            "title": "Извержение. Гелевая версия",
             "image": {
                 large: "/assets/img/cvet/48.jpg"
              }          
              
         },
         {
-            "title": "49",
+            "title": "Мир Иллюзий",
             "image": {
                 large: "/assets/img/cvet/49.jpg"
              }          
              
         },
         {
-            "title": "50",
-            "image": {
-                large: "/assets/img/cvet/50.jpg"
-             }          
-             
-        },
-        {
-            "title": "51",
+            "title": "Неоновые грибы",
             "image": {
                 large: "/assets/img/cvet/51.jpg"
              }          
              
         },
         {
-            "title": "52",
+            "title": "Сон",
             "image": {
                 large: "/assets/img/cvet/52.jpg"
              }          
              
         },
         {
-            "title": "53",
+            "title": "Цветок",
             "image": {
                 large: "/assets/img/cvet/53.jpg"
              }          
              
         },
         {
-            "title": "54",
-            "image": {
-                large: "/assets/img/cvet/54.jpg"
-             }          
-             
-        },
-        {
-            "title": "55",
+            "title": "Ноев ковчег",
             "image": {
                 large: "/assets/img/cvet/55.jpg"
              }          
              
         },
         {
-            "title": "56",
+            "title": "Портал",
             "image": {
                 large: "/assets/img/cvet/56.jpg"
              }          
              
         },
         {
-            "title": "57",
+            "title": "Гнев души",
             "image": {
                 large: "/assets/img/cvet/57.jpg"
              }          
