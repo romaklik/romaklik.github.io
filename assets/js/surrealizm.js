@@ -1,122 +1,45 @@
 // 
 new Vue({
-    el: '#threed',
-    data: {
-        threedimages: [
-        {
-            "title": "Шар",
-            "image": {
-                large: "/assets/img/threed/1.jpg"
-             }          
-             
-        },
-        {
-            "title": "Шар и ножницы",
-            "image": {
-                large: "/assets/img/threed/2.jpg"
-             }          
-             
-        },
-        {
-            "title": "Пасажирский самолет летящий",
-            "image": {
-                large: "/assets/img/threed/3.jpg"
-             }          
-             
-        },
-        {
-            "title": "Карандаш",
-            "image": {
-                large: "/assets/img/threed/4.jpg"
-             }          
-             
-        },
-        {
-            "title": "Бабочка",
-            "image": {
-                large: "/assets/img/threed/5.jpg"
-             }          
-             
-        },
-        {
-            "title": "Дырка в ладоне",
-            "image": {
-                large: "/assets/img/threed/6.jpg"
-             }          
-             
-        },
-        {
-            "title": "Порхающая бабочка",
-            "image": {
-                large: "/assets/img/threed/7.jpg"
-             }          
-             
-        },
-        {
-            "title": "Луна",
-            "image": {
-                large: "/assets/img/threed/8.jpg"
-             }          
-             
-        },
-        {
-            "title": "В столе трещина",
-            "image": {
-                large: "/assets/img/threed/9.jpg"
-             }          
-             
-        },
-        {
-            "title": "Шар",
-            "image": {
-                large: "/assets/img/threed/10.jpg"
-             }          
-             
-        }
-        ]
-    }
-});
-new Vue({
   el: '#cvet',
   data: {
     cimages: [
         {
-    		"title": "1",
+    		"title": "Лунные бабочки",
     		"image": {
     			large: "/assets/img/cvet/1.jpg"
     		 }   		
     		 
         },
         {
-    		"title": "2",
+    		"title": "Крым. Любимовский пляж. Утро",
     		"image": {
     			large: "/assets/img/cvet/2.jpg"
     		 }   		
     		 
         },
         {
-    		"title": "3",
+    		"title": "Динозавры в Севастополе",
     		"image": {
     			large: "/assets/img/cvet/3.jpg"
     		 }   		
     		 
         },
         {
-    		"title": "4",
+    		"title": "Японские мотивы",
     		"image": {
     			large: "/assets/img/cvet/4.jpg"
     		 }   		
     		 
         },
         {
-    		"title": "5",
+    		"title": "Лунные бабочки. Белая версия",
     		"image": {
     			large: "/assets/img/cvet/5.jpg"
     		 }   		
     		 
         },
         {
-    		"title": "6",
+    		"title": "Пегас и роза",
     		"image": {
     			large: "/assets/img/cvet/6.jpg"
     		 }   		
@@ -775,6 +698,83 @@ var chernobelie = new Vue({
     }
 });
 // cherno-belie end
+new Vue({
+    el: '#threed',
+    data: {
+        threedimages: [
+        {
+            "title": "Шар",
+            "image": {
+                large: "/assets/img/threed/1.jpg"
+             }          
+             
+        },
+        {
+            "title": "Шар и ножницы",
+            "image": {
+                large: "/assets/img/threed/2.jpg"
+             }          
+             
+        },
+        {
+            "title": "Пасажирский самолет летящий",
+            "image": {
+                large: "/assets/img/threed/3.jpg"
+             }          
+             
+        },
+        {
+            "title": "Карандаш",
+            "image": {
+                large: "/assets/img/threed/4.jpg"
+             }          
+             
+        },
+        {
+            "title": "Бабочка",
+            "image": {
+                large: "/assets/img/threed/5.jpg"
+             }          
+             
+        },
+        {
+            "title": "Дырка в ладоне",
+            "image": {
+                large: "/assets/img/threed/6.jpg"
+             }          
+             
+        },
+        {
+            "title": "Порхающая бабочка",
+            "image": {
+                large: "/assets/img/threed/7.jpg"
+             }          
+             
+        },
+        {
+            "title": "Луна",
+            "image": {
+                large: "/assets/img/threed/8.jpg"
+             }          
+             
+        },
+        {
+            "title": "В столе трещина",
+            "image": {
+                large: "/assets/img/threed/9.jpg"
+             }          
+             
+        },
+        {
+            "title": "Шар",
+            "image": {
+                large: "/assets/img/threed/10.jpg"
+             }          
+             
+        }
+        ]
+    }
+});
 var video = new Vue({
     el: '#video',
 
