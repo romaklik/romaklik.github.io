@@ -109,7 +109,7 @@ new Vue({
              
         }, 
         {
-            "title": "Севастополь. Май 1944 г. III часть",
+            "title": "Севастополь. Май 1944 г. II часть",
             "image": {
                 large: "/assets/img/cvet/19.jpg"
              }          
