@@ -631,6 +631,20 @@ new Vue({
                 large: "/assets/img/threed/10.jpg"
              }          
              
+        },
+        {
+            "title": "Лодка парящая. Часть I",
+            "image": {
+                large: "/assets/img/threed/11.jpg"
+             }          
+             
+        },
+        {
+            "title": "Лодка парящая. Часть II",
+            "image": {
+                large: "/assets/img/threed/12.jpg"
+             }          
+             
         }
         ]
     }
