@@ -1,1 +1,10 @@
 CACHE MANIFEST
+
+assets/css
+assets/img
+assets/img/cvet
+assets/img/cb
+assets/img/threed
+assets/js
+index.html
+favicon.ico
