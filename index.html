@@ -121,7 +121,7 @@
           <div class="portfolio-wrap">
             <figure>
               <img v-bind:src="b.image.large" class="img-fluid" v-bind:alt="b.title">
-              <a v-bind:href="b.image.large" data-fancybox="cb" v-bind:data-caption="b.title b.year" v-bind:data-title="b.title b.year" class="link-preview"><i class="ion ion-eye"></i></a>
+              <a v-bind:href="b.image.large" data-fancybox="cb" v-bind:data-caption="b.title,b.year" v-bind:data-title="b.title,b.year" class="link-preview"><i class="ion ion-eye"></i></a>
             </figure>
             <div class="portfolio-info">
               <h4 v-bind:title="b.title">{{b.title}}.</h4>
