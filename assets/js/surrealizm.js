@@ -295,7 +295,7 @@ var chernobelie = new Vue({
     data: {
         // layout: 'grid',
         cbimages: [{
-            "title": "Динозавры в Севастополе.",
+            "title": "Динозавры в Севастополе",
             "year": "2018",
             "image": {
                 large: "assets/img/cb/1.jpg"
@@ -303,240 +303,225 @@ var chernobelie = new Vue({
              
         },
         {
-            "title": "2",
+            "title": "Гнев Души",
+            "year": "2018",
             "image": {
                 large: "assets/img/cb/2.jpg"
              }          
              
         },
         {
-            "title": "3",
+            "title": "Она",
+            "year": "Версия 2019",
             "image": {
                 large: "assets/img/cb/3.jpg"
              }          
              
         },
         {
-            "title": "4",
+            "title": "Пегас и Космический Барашек",
+            "year": "2018",
             "image": {
                 large: "assets/img/cb/4.jpg"
              }          
              
         },
         {
-            "title": "5",
+            "title": "Круги на циферблате Вечности",
+            "year": "2018",
             "image": {
                 large: "assets/img/cb/5.jpg"
              }          
              
         },
         {
-            "title": "6",
+            "title": "Первобытное семя",
+            "year": "1999",
             "image": {
                 large: "assets/img/cb/6.jpg"
              }          
              
         },
         {
-            "title": "7",
+            "title": "Рука в стакане Бытия",
+            "year": "2017",
             "image": {
                 large: "assets/img/cb/7.jpg"
              }          
              
         },
         {
-            "title": "8",
+            "title": "Малыши",
+            "year": "1998",
             "image": {
                 large: "assets/img/cb/8.jpg"
              }          
              
         },
         {
-            "title": "9",
-            "image": {
-                large: "assets/img/cb/9.jpg"
-             }          
-             
-        },
-        {
-            "title": "10",
+            "title": "Как я болел ангиной",
+            "year": "1996",
             "image": {
                 large: "assets/img/cb/10.jpg"
              }          
              
         },
         {
-            "title": "11",
+            "title": "Ирина",
+            "year": "2018",
             "image": {
                 large: "assets/img/cb/11.jpg"
              }          
              
         },
         {
-            "title": "12",
+            "title": "Мир Иллюзий",
+            "year": "2018",
             "image": {
                 large: "assets/img/cb/12.jpg"
              }          
              
         },
         {
-            "title": "13",
+            "title": "Автопортрет. Шарж",
+            "year": "2018",
             "image": {
                 large: "assets/img/cb/13.jpg"
              }          
              
         },
         {
-            "title": "14",
-            "image": {
-                large: "assets/img/cb/14.jpg"
-             }          
-             
-        },
-        {
-            "title": "15",
-            "image": {
-                large: "assets/img/cb/15.jpg"
-             }          
-             
-        },
-        {
-            "title": "16",
-            "image": {
-                large: "assets/img/cb/16.jpg"
-             }          
-             
-        },
-        {
-            "title": "17",
-            "image": {
-                large: "assets/img/cb/17.jpg"
-             }          
-             
-        },
-        {
-            "title": "18",
+            "title": "Пегас и Космический Барашек",
+            "year": "2019",
             "image": {
                 large: "assets/img/cb/18.jpg"
              }          
              
         },
         {
-            "title": "19",
+            "title": "Кот и спящая Собака",
+            "year": "2018",
             "image": {
                 large: "assets/img/cb/19.jpg"
              }          
              
         },
         {
-            "title": "20",
+            "title": "Дкрик Души",
+            "year": "2019",
             "image": {
                 large: "assets/img/cb/20.jpg"
              }          
              
         },
         {
-            "title": "21",
+            "title": "Мой мир",
+            "year": "2019",
             "image": {
                 large: "assets/img/cb/21.jpg"
              }          
              
         },
         {
-            "title": "22",
-            "image": {
-                large: "assets/img/cb/22.jpg"
-             }          
-             
-        },
-        {
-            "title": "23",
+            "title": "Ключ от времени",
+            "year": "2019",
             "image": {
                 large: "assets/img/cb/23.jpg"
              }          
              
         },
         {
-            "title": "24",
-            "image": {
-                large: "assets/img/cb/24.jpg"
-             }          
-             
-        },
-        {
-            "title": "25",
+            "title": "Богиня",
+            "year": "1997",
             "image": {
                 large: "assets/img/cb/25.jpg"
              }          
              
         },
         {
-            "title": "26",
+            "title": "Война",
+            "year": "2001",
             "image": {
                 large: "assets/img/cb/26.jpg"
              }          
              
         },
         {
-            "title": "27",
+            "title": "Силы Света и Тьмы",
+            "year": "1994",
             "image": {
                 large: "assets/img/cb/27.jpg"
              }          
              
         },
         {
-            "title": "28",
+            "title": "Хранитель Гор",
+            "year": "2003",
             "image": {
                 large: "assets/img/cb/28.jpg"
              }          
              
         },
         {
-            "title": "29",
+            "title": "Татуировка",
+            "year": "1997",
             "image": {
                 large: "assets/img/cb/29.jpg"
              }          
              
         },
         {
-            "title": "30",
+            "title": "Кинжал",
+            "year": "2005",
             "image": {
                 large: "assets/img/cb/30.jpg"
              }          
              
         },
         {
-            "title": "31",
+            "title": "Солнечные паруса",
+            "year": "1999",
             "image": {
                 large: "assets/img/cb/31.jpg"
              }          
              
         },
         {
-            "title": "32",
+            "title": "Меч",
+            "year": "1994",
             "image": {
                 large: "assets/img/cb/32.jpg"
              }          
              
         },
         {
-            "title": "33",
+            "title": "Мир Иллюзий",
+            "year": "Версия 1998",
             "image": {
                 large: "assets/img/cb/33.jpg"
              }          
              
         },
         {
-            "title": "34",
+            "title": "Воспоминания о сахалине",
+            "year": "1998",
             "image": {
                 large: "assets/img/cb/34.jpg"
              }          
              
         },
         {
-            "title": "35",
+            "title": "Цветок",
+            "year": "1996",
             "image": {
                 large: "assets/img/cb/35.jpg"
+             }          
+             
+        },
+        {
+            "title": "Привидение и Инопланетянин",
+            "image": {
+                large: "assets/img/cb/36.jpg"
              }          
              
         }
