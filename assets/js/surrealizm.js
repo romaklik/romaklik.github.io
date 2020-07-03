@@ -273,6 +273,12 @@ new Vue({
             "image": {
                 large: "/assets/img/cvet/62.jpg"
             }
+        },
+        {
+            "title": "Театр Луначарского",
+            "image": {
+                large: "/assets/img/cvet/63.jpg"
+            }
         }
         ]
 
@@ -289,7 +295,8 @@ var chernobelie = new Vue({
     data: {
         // layout: 'grid',
         cbimages: [{
-            "title": "1",
+            "title": "Динозавры в Севастополе.",
+            "year": "2018"
             "image": {
                 large: "assets/img/cb/1.jpg"
              }          

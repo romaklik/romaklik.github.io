@@ -55,7 +55,7 @@
               <li class="drop-down"><a href="">Картины</a>
               	<ul>
                   <li><a href="#cvet">Цветные</a></li>
-                  <li><a href="#cherno-belie">Черно-белые</a></li>
+                  <li><a href="#cherno-belie">Графика</a></li>
                   <li><a href="#threed">Трехмерные</a></li>
               	</ul>
               </li>
@@ -102,8 +102,7 @@
             </figure>
             <div class="portfolio-info">
               <h4 v-bind:title="a.title">{{a.title}}</h4>
-              <!-- <h4><a href="portfolio-details.html">App 1</a></h4>
-              <p>App</p> -->
+              
             </div>
           </div>
         </div>
@@ -114,7 +113,7 @@
     <section id="cherno-belie" class="section-bg">
     	<div class="container" data-aos="fade-up">
     		<header class="section-header">
-    			<h3 class="section-title">Черно-белые</h3>
+    			<h3 class="section-title">Графика</h3>
     		</header>
     	</div>
     	<div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
@@ -125,14 +124,10 @@
               <a v-bind:href="b.image.large" data-fancybox="cb" v-bind:data-caption="b.title" v-bind:data-title="b.title" class="link-preview"><i class="ion ion-eye"></i></a>
             </figure>
             <div class="portfolio-info">
-              <h4 v-bind:title="b.title">{{b.title}}</h4>
-              <!-- <h4><a href="portfolio-details.html">App 1</a></h4>
-              <p>App</p> -->
+              <h4 v-bind:title="b.title">{{b.title}}</h4>.{{b.year}}
+              
             </div>
-            <!-- <div class="portfolio-info">
-              <h4><a href="portfolio-details.html">App 1</a></h4>
-              <p>App</p>
-            </div> -->
+            
           </div>
         </div>
     	</div>
@@ -200,7 +195,7 @@
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>Телефон</h3>
-              <p><a href="tel:+155895548855">+79787672406</a></p>
+              <p><a href="tel:+79787672406">+79787672406</a></p>
             </div>
           </div>
 
