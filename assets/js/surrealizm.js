@@ -520,6 +520,7 @@ var chernobelie = new Vue({
         },
         {
             "title": "Привидение и Инопланетянин",
+            "year": "",
             "image": {
                 large: "assets/img/cb/36.jpg"
              }          
