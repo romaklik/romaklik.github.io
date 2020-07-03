@@ -296,7 +296,7 @@ var chernobelie = new Vue({
         // layout: 'grid',
         cbimages: [{
             "title": "Динозавры в Севастополе.",
-            "year": "2018"
+            "year": "2018",
             "image": {
                 large: "assets/img/cb/1.jpg"
              }          
