@@ -48,10 +48,19 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 11;
 }
 
-.back-to-top i {
+i.ion-ios-arrow-up {
+    /* margin-top: 112px; */
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+}
+
+/*.back-to-top i {
   padding-top: 12px;
   color: #fff;
-}
+}*/
 
 @media (max-width: 768px) {
   .back-to-top {
@@ -434,6 +443,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 80%;
   margin: 0 auto 30px auto;
   color: #fff;
+  font-size: 5em;
 }
 
 @media (min-width: 1024px) {
@@ -1792,7 +1802,8 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #000;
+  /*background: #000;*/
+  background: #111;
   padding: 0 0 30px 0;
   color: #eee;
   font-size: 14px;
@@ -1801,6 +1812,8 @@ section {
 #footer .footer-top {
   background: #111;
   padding: 60px 0 30px 0;
+  border-bottom: solid black 2px;
+  margin: 0 10px 10px;
 }
 
 #footer .footer-top .footer-info {
@@ -1819,7 +1832,8 @@ section {
 }
 
 #footer .footer-top .footer-info p {
-  font-size: 14px;
+  /*font-size: 14px;*/
+  font-size: 3em;
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Montserrat", sans-serif;
@@ -1947,4 +1961,14 @@ section {
   text-align: center;
   font-size: 13px;
   color: #ddd;
+}
+.ion-home {
+    display: block;
+    position: relative;
+    bottom: 4px;
+    transition: 0.3s;
+    font-size: 1.5em;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
 }
