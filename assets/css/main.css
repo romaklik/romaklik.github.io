@@ -674,7 +674,8 @@ section {
 /* About Us Section
 --------------------------------*/
 #about {
-  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background: url("../img/about-bg.webp") center top no-repeat fixed;
+  /*background: url("../img/about-bg.jpg") center top no-repeat fixed;*/
   /*background: url("../img/cvet/2.jpg") center top no-repeat fixed;*/
   background-size: cover;
   padding: 60px 0 40px 0;
@@ -1976,3 +1977,151 @@ section {
 .col-lg-3.col-md-6.child-v:nth-child(2n) {
     margin: 0 0 0 300px;
 }
+
+/* foto-s-vistavki Section
+--------------------------------*/
+#foto-s-vistavki {
+  padding: 60px 0;
+}
+
+#foto-s-vistavki #foto-s-vistavki-flters {
+  padding: 0;
+  margin: 5px 0 35px 0;
+  list-style: none;
+  text-align: center;
+}
+
+#foto-s-vistavki #foto-s-vistavki-flters li {
+  cursor: pointer;
+  margin: 15px 15px 15px 0;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #666666;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background: #fff;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+#foto-s-vistavki #foto-s-vistavki-flters li:hover, #foto-s-vistavki #foto-s-vistavki-flters li.filter-active {
+  background: #18d26e;
+  color: #fff;
+}
+
+#foto-s-vistavki #foto-s-vistavki-flters li:last-child {
+  margin-right: 0;
+}
+
+#foto-s-vistavki .portfolio-wrap {
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+#foto-s-vistavki .portfolio-wrap:hover {
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
+}
+
+#foto-s-vistavki .portfolio-item {
+  position: relative;
+  height: 360px;
+  overflow: hidden;
+}
+
+#foto-s-vistavki .portfolio-item figure {
+  background: #000;
+  overflow: hidden;
+  height: 240px;
+  position: relative;
+  border-radius: 4px 4px 0 0;
+  margin: 0;
+}
+
+#foto-s-vistavki .portfolio-item figure:hover img {
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+#foto-s-vistavki .portfolio-item figure .link-preview, #foto-s-vistavki .portfolio-item figure .link-details {
+  position: absolute;
+  display: inline-block;
+  opacity: 0;
+  line-height: 1;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.2s linear;
+}
+
+#foto-s-vistavki .portfolio-item figure .link-preview i, #foto-s-vistavki .portfolio-item figure .link-details i {
+  padding-top: 6px;
+  font-size: 22px;
+  color: #333;
+}
+
+#foto-s-vistavki .portfolio-item figure .link-preview:hover, #foto-s-vistavki .portfolio-item figure .link-details:hover {
+  background: #18d26e;
+}
+
+#foto-s-vistavki .portfolio-item figure .link-preview:hover i, #foto-s-vistavki .portfolio-item figure .link-details:hover i {
+  color: #fff;
+}
+
+#foto-s-vistavki .portfolio-item figure .link-preview {
+  left: calc(50% - 38px);
+  top: calc(50% - 18px);
+}
+
+#foto-s-vistavki .portfolio-item figure .link-details {
+  right: calc(50% - 38px);
+  top: calc(50% - 18px);
+}
+
+#foto-s-vistavki .portfolio-item figure:hover .link-preview {
+  opacity: 1;
+  left: calc(50% - 44px);
+}
+
+#foto-s-vistavki .portfolio-item figure:hover .link-details {
+  opacity: 1;
+  right: calc(50% - 44px);
+}
+
+#foto-s-vistavki .portfolio-item .portfolio-info {
+  background: #fff;
+  text-align: center;
+  padding: 30px;
+  height: 90px;
+  border-radius: 0 0 3px 3px;
+}
+
+#foto-s-vistavki .portfolio-item .portfolio-info h4 {
+  font-size: 18px;
+  line-height: 1px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  padding-bottom: 0;
+}
+
+#foto-s-vistavki .portfolio-item .portfolio-info h4 a {
+  color: #333;
+}
+
+#foto-s-vistavki .portfolio-item .portfolio-info h4 a:hover {
+  color: #18d26e;
+}
+
+#foto-s-vistavki .portfolio-item .portfolio-info p {
+  padding: 0;
+  margin: 0;
+  color: #b8b8b8;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/*foto-s-vistavki section end*/
