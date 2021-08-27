@@ -6,6 +6,13 @@ assets/img/cvet/*.jpg
 assets/img/cb/*.jpg
 assets/img/threed/*.jpg
 assets/img/sharshs/*.jpg
+
+assets/img/*.webp
+assets/img/cvet/*.webp
+assets/img/cb/*.webp
+assets/img/threed/*.webp
+assets/img/sharshs/*.webp
+
 assets/js/*.js
 index.html
 favicon.ico
